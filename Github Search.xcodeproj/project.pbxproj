@@ -18,6 +18,7 @@
 		DFC22E762224075B00A2661D /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC22E752224075B00A2661D /* ErrorAlert.swift */; };
 		DFC22E782224077700A2661D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC22E772224077700A2661D /* APIError.swift */; };
 		DFC22E7A2224089D00A2661D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC22E792224089D00A2661D /* Repository.swift */; };
+		DFE54D9B22255433005A0796 /* GitHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE54D9A22255433005A0796 /* GitHubTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DFC22E752224075B00A2661D /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
 		DFC22E772224077700A2661D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		DFC22E792224089D00A2661D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DFE54D9A22255433005A0796 /* GitHubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC22E5E2223FFC200A2661D /* Main.storyboard */,
+				DFE54D9A22255433005A0796 /* GitHubTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				DFC22E7A2224089D00A2661D /* Repository.swift in Sources */,
 				DFC22E74222406AF00A2661D /* NetworkManager.swift in Sources */,
+				DFE54D9B22255433005A0796 /* GitHubTableViewCell.swift in Sources */,
 				DFC22E762224075B00A2661D /* ErrorAlert.swift in Sources */,
 				DFC22E5D2223FFC200A2661D /* ViewController.swift in Sources */,
 				DFC22E5B2223FFC200A2661D /* AppDelegate.swift in Sources */,

@@ -22,6 +22,7 @@ class NetworkManager{
             }
             if let httpResponse = response.response{
                 self.nextPage = self.getNextPageFromHeaders(response: httpResponse)
+                print(self.nextPage!)
             }
             guard let data = response.data else {
                 completion(nil, APIError.invalidData)
@@ -46,18 +47,21 @@ class NetworkManager{
     
 
     private func getNextPageFromHeaders(response: HTTPURLResponse?) -> String? {
-
+        
         guard let linkHeader = response?.allHeaderFields["Link"] as? String else { return nil }
         let links = linkHeader.components(separatedBy: ",")
-
+        
         var dictionary: [String: String] = [:]
         links.forEach({
             let components = $0.components(separatedBy:"; ")
             let cleanPath = components[0].trimmingCharacters(in: CharacterSet(charactersIn: "<>"))
             dictionary[components[1]] = cleanPath
         })
-
-        if let nextPagePath = dictionary["rel=\"next\""] {
+        
+        if var nextPagePath = dictionary["rel=\"next\""] {
+            while nextPagePath.first != "h"{
+                nextPagePath.removeFirst()
+            }
             return nextPagePath
         }
         return nil
